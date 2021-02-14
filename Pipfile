@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+ipython = "*"
+gym = "*"
+torch = "*"
+torchvision = "*"
+gym-super-mario-bros = "*"
+tensorboardx = "*"
+
+[requires]
+python_version = "3.7"
+prepcv="python -m pip install opencv-python"

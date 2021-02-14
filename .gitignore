@@ -1,3 +1,5 @@
+.venv
+
 # Logs
 logs
 *.log
@@ -33,3 +35,4 @@ lib/
 # IDE files
 .idea
 *.iml
+

@@ -8,7 +8,19 @@ from collections import deque
 from copy import copy
 
 import gym_super_mario_bros
-from nes_py.wrappers import BinarySpaceToDiscreteSpaceEnv
+#from nes_py.wrappers import BinarySpaceToDiscreteSpaceEnv
+
+from nes_py.wrappers import JoypadSpace as BinarySpaceToDiscreteSpaceEnv
+"""
+env = JoypadSpace(env, [
+    ['NOP'],
+    ['right', 'A'],
+    ['left', 'A'],
+    ['A'],
+])
+"""
+
+
 from gym_super_mario_bros.actions import SIMPLE_MOVEMENT, COMPLEX_MOVEMENT
 
 from torch.multiprocessing import Pipe, Process
